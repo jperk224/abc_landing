@@ -54,6 +54,7 @@ main {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 2px;
+  padding: 10px;
 }
 
 .product_heading {
@@ -83,6 +84,7 @@ footer > ul {
 
 /***** Media Queries *****/
 
+/***** Tablets *****/
 @media screen and (min-width: 768px) {
 
   .logo {
@@ -100,6 +102,55 @@ footer > ul {
   .logo > h1 {
     flex-grow: 2;
     margin-left: -60px;
+  }
+
+}
+
+/***** Full Screen *****/
+@media screen and (min-width: 960px) {
+  
+  .logo h1 {
+    margin-left: -200px;
+  }
+
+  .navbar {
+    padding-right: 20px;
+  }
+
+  .navbar .hamburger {
+    display: none;
+  }
+  
+  .navbar > ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .menu li {
+    margin-left: 50px;
+  } 
+
+  main {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: space-around;
+  }
+
+  .product {
+    margin-left: 2%;
+    margin-right: 2%;
+    flex: 1 1 0;
+  }
+
+  footer > ul {
+    justify-content: space-around;
+    flex: 1 1 0;
   }
 
 }
