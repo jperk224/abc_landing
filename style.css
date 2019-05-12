@@ -31,10 +31,12 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center; /* centered veritcally along the cross axis */
     }
 
     .menu > .item {
-        flex-grow: 1;
+        flex: 1 1; /* flex shorthand --> grow | shrink */
+        border-top: none;
       }
     
       .menu > .search {
@@ -46,10 +48,10 @@ body {
       }
     
       .menu > .name {
-        flex-grow: 0; 
+        flex: 0 0 120px; /* flex shorthand --> grow | shrink | basis */
       }
     
       .menu > .logo {
-        flex-grow: 0;
+        flex: 0 0 35px;
       }
 }
